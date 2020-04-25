@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <modules>
+        <module>ego-manager</module>
+    </modules>
+    <parent>
+        <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-web -->
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-parent</artifactId>
+            <version>2.1.12.RELEASE</version>
+            <relativePath></relativePath>
+    </parent>
+
+    <groupId>com.zy</groupId>
+    <artifactId>ego-shop</artifactId>
+    <version>1.0</version>
+
+    <packaging>pom</packaging>
+
+    <properties>
+        <mybaits-plus.version>3.2.0</mybaits-plus.version>
+        <dubbo.version>2.7.3</dubbo.version>
+        <boot-web-shiro.version>1.4.2</boot-web-shiro.version>
+        <shiro-redis.version>3.2.3</shiro-redis.version>
+        <swagger2.version>2.9.2</swagger2.version>
+        <swagger-ui.version>1.9.6</swagger-ui.version>
+        <hutool.version>5.0.7</hutool.version>
+        <fastjson.version>1.2.62</fastjson.version>
+        <fst.version>2.57</fst.version>
+        <orika.version>1.5.4</orika.version>
+    </properties>
+
+    <!--     依赖管理，只是声明依赖而已，并没有真正的使用依赖-->
+    <dependencyManagement>
+        <dependencies>
+            <!--            mybatis-plus-boot-starter-->
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-boot-starter</artifactId>
+                <version>${mybaits-plus.version}</version>
+            </dependency>
+            <!--             dubbo 和spring boot-->
+            <dependency>
+                <groupId>org.apache.dubbo</groupId>
+                <artifactId>dubbo-spring-boot-starter</artifactId>
+                <version>${dubbo.version}</version>
+            </dependency>
+            <!-- 使用zk 做注册中心，Dubbo 需要的依赖 -->
+            <dependency>
+                <groupId>org.apache.dubbo</groupId>
+                <artifactId>dubbo-dependencies-zookeeper</artifactId>
+                <version>${dubbo.version}</version>
+                <type>pom</type>
+                <!--                 在zk 里面排除了日志-->
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.slf4j</groupId>
+                        <artifactId>slf4j-log4j12</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+            <!--            shiro 和spring boot web 集成的方案-->
+            <dependency>
+                <groupId>org.apache.shiro</groupId>
+                <artifactId>shiro-spring-boot-web-starter</artifactId>
+                <version>${boot-web-shiro.version}</version>
+            </dependency>
+            <!-- redis 和shiro 整合 -->
+            <dependency>
+                <groupId>org.crazycake</groupId>
+                <artifactId>shiro-redis</artifactId>
+                <version>${shiro-redis.version}</version>
+            </dependency>
+            <!-- swagger2 -->
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger2</artifactId>
+                <version>${swagger2.version}</version>
+            </dependency>
+            <!-- swagger2的页面 -->
+            <dependency>
+                <groupId>com.github.xiaoymin</groupId>
+                <artifactId>swagger-bootstrap-ui</artifactId>
+                <version>${swagger-ui.version}</version>
+            </dependency>
+            <!-- hutool -->
+            <dependency>
+                <groupId>cn.hutool</groupId>
+                <artifactId>hutool-all</artifactId>
+                <version>${hutool.version}</version>
+            </dependency>
+            <!-- fastjson -->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>${fastjson.version}</version>
+            </dependency>
+            <!-- FST -->
+            <dependency>
+                <groupId>de.ruedigermoeller</groupId>
+                <artifactId>fst</artifactId>
+                <version>${fst.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>ma.glasnost.orika</groupId>
+                <artifactId>orika-core</artifactId>
+                <version>${orika.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+</project>

@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:mysql://111.229.65.208:3306/ego-shop
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  redis:
+    port: 6379
+    host: 111.229.65.208
+mybatis-plus:
+  mapper-locations:  classpath:/mapper/*.xml
+  type-aliases-package: com.zy.entity
+  configuration:
+    log-impl:  org.apache.ibatis.logging.stdout.StdOutImpl
+server:
+  port: 8085

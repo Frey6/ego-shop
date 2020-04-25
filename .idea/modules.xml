@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ego-manager/ego-manager.iml" filepath="$PROJECT_DIR$/ego-manager/ego-manager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ego-shop.iml" filepath="$PROJECT_DIR$/ego-shop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ego-manager/manager-api/manager-api.iml" filepath="$PROJECT_DIR$/ego-manager/manager-api/manager-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ego-manager/manager-domain/manager-domain.iml" filepath="$PROJECT_DIR$/ego-manager/manager-domain/manager-domain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ego-manager/manager-mapper/manager-mapper.iml" filepath="$PROJECT_DIR$/ego-manager/manager-mapper/manager-mapper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ego-manager/manager-service/manager-service.iml" filepath="$PROJECT_DIR$/ego-manager/manager-service/manager-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ego-manager/manager-web/manager-web.iml" filepath="$PROJECT_DIR$/ego-manager/manager-web/manager-web.iml" />
+    </modules>
+  </component>
+</project>
