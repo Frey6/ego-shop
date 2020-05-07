@@ -2,6 +2,11 @@
 <project version="4">
   <component name="Encoding" addBOMForNewFiles="with NO BOM">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ego-item" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ego-item/item-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ego-item/item-domain" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ego-item/item-mapper" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ego-item/item-service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ego-manager" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ego-manager/manager-api" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ego-manager/manager-domain" charset="UTF-8" />

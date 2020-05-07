@@ -11,9 +11,11 @@ import org.apache.shiro.web.mgt.DefaultWebSecurityManager;
 import org.crazycake.shiro.IRedisManager;
 import org.crazycake.shiro.RedisManager;
 import org.crazycake.shiro.RedisSessionDAO;
+import org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.DependsOn;
 import org.springframework.util.StringUtils;
 
 import java.util.HashMap;
@@ -87,7 +89,8 @@ public class ShiroCustomConfiguration {
     filterChainDefinitionMap.put("/captcha.jpg","anon");
     filterChainDefinitionMap.put("/unauthorizedUrl","anon");
     filterChainDefinitionMap.put("/getCode","anon") ; //放行的资源
-    filterChainDefinitionMap.put("/**","authc"); // 拦截的资源
+//    filterChainDefinitionMap.put("/**","authc"); // 拦截的资源
+    filterChainDefinitionMap.put("/**","anon");
     shiroFilterFactoryBean.setFilterChainDefinitionMap(filterChainDefinitionMap);
     shiroFilterFactoryBean.setSecurityManager(defaultWebSecurityManager);
     return  shiroFilterFactoryBean ;
@@ -118,6 +121,17 @@ public class ShiroCustomConfiguration {
       }
     }
     return redisManager ;
+  }
+  @Bean
+  @DependsOn({"lifecycleBeanPostProcessor"})
+  public DefaultAdvisorAutoProxyCreator defaultAdvisorAutoProxyCreator()
+  {
+    DefaultAdvisorAutoProxyCreator defaultAdvisorAutoProxyCreator = new DefaultAdvisorAutoProxyCreator();
+
+    defaultAdvisorAutoProxyCreator.setProxyTargetClass(true);
+    defaultAdvisorAutoProxyCreator.setExposeProxy(true);
+    defaultAdvisorAutoProxyCreator.setOrder(-1000);
+    return defaultAdvisorAutoProxyCreator;
   }
 
 }

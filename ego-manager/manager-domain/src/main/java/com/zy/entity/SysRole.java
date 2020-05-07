@@ -1,14 +1,24 @@
 package com.zy.entity;
 
 import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import java.time.LocalDateTime;
 import java.io.Serializable;
+import java.util.Date;
+import java.util.List;
+
+import com.fasterxml.jackson.annotation.JsonFormat;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
 import lombok.experimental.Accessors;
+
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotEmpty;
 
 /**
  * <p>
@@ -29,6 +39,7 @@ public class SysRole implements Serializable {
     @TableId(value = "role_id", type = IdType.AUTO)
     private Long roleId;
 
+    @NotBlank
     @ApiModelProperty(value = "角色名称")
     private String roleName;
 
@@ -38,8 +49,13 @@ public class SysRole implements Serializable {
     @ApiModelProperty(value = "创建者ID")
     private Long createUserId;
 
+    @JsonFormat(pattern = "yyyy-MM-dd HH-ss-mm")
     @ApiModelProperty(value = "创建时间")
-    private LocalDateTime createTime;
+    private Date createTime;
 
+    @NotEmpty
+    @TableField(exist = false)
+    @ApiModelProperty("该角色包含的菜单id")
+    private List<Long> menuIdList;
 
 }

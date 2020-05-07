@@ -17,6 +17,7 @@ public class HashMD5Util {
   }
 
   public static void main(String[] args) {
+    //b53b8594f4e0ec33b5f3ed8c29c2a81b
     String md5 = getMd5("123456", 2);
     System.out.println(md5);
   }

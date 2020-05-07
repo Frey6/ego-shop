@@ -12,16 +12,21 @@ import org.apache.shiro.realm.AuthorizingRealm;
 import org.apache.shiro.subject.PrincipalCollection;
 import org.apache.shiro.util.ByteSource;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Component;
 
 import java.util.Arrays;
 import java.util.HashSet;
+import java.util.Set;
 
 @Component
 public class UserRealm extends AuthorizingRealm {
 
   @Autowired
   private SysUserService sysUserService ;
+
+  @Autowired
+  private RedisTemplate redisTemplate;
   /**
    * 做授权
    * 授权可能会运行多次
@@ -31,12 +36,10 @@ public class UserRealm extends AuthorizingRealm {
   @Override
   protected AuthorizationInfo doGetAuthorizationInfo(PrincipalCollection principals) {
     SysUser sysUser = (SysUser) principals.getPrimaryPrincipal();
-    if (sysUser.getUsername().equals("admin")){
-      SimpleAuthorizationInfo simpleAuthorizationInfo = new SimpleAuthorizationInfo();
-      simpleAuthorizationInfo.setStringPermissions(new HashSet<>(Arrays.asList("admin")));
-      return  simpleAuthorizationInfo;
-    }
-    return null;
+    Set<String> o = (Set<String>) redisTemplate.opsForValue().get("AUTH_PERMIS" + sysUser.getUserId());
+    SimpleAuthorizationInfo simpleAuthorizationInfo = new SimpleAuthorizationInfo();
+    simpleAuthorizationInfo.setStringPermissions(o);
+    return  simpleAuthorizationInfo;
   }
 
   /**

@@ -6,6 +6,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="item-api" />
+        <module name="item-domain" />
+        <module name="item-mapper" />
+        <module name="item-service" />
         <module name="manager-api" />
         <module name="manager-domain" />
         <module name="manager-mapper" />
@@ -14,8 +18,13 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="ego-item" target="1.8" />
       <module name="ego-manager" target="1.8" />
       <module name="ego-shop" target="1.8" />
+      <module name="item-api" target="1.8" />
+      <module name="item-domain" target="1.8" />
+      <module name="item-mapper" target="1.8" />
+      <module name="item-service" target="1.8" />
       <module name="manager-api" target="1.8" />
       <module name="manager-domain" target="1.8" />
       <module name="manager-mapper" target="1.8" />
@@ -25,6 +34,10 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="item-api" options="-parameters" />
+      <module name="item-domain" options="-parameters" />
+      <module name="item-mapper" options="-parameters" />
+      <module name="item-service" options="-parameters" />
       <module name="manager-api" options="-parameters" />
       <module name="manager-domain" options="-parameters" />
       <module name="manager-mapper" options="-parameters" />

@@ -1,13 +1,19 @@
 package com.zy.entity;
 
 import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import java.io.Serializable;
+import java.util.List;
+
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
+
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 
 /**
  * <p>
@@ -31,6 +37,7 @@ public class SysMenu implements Serializable {
     @ApiModelProperty(value = "父菜单ID，一级菜单为0")
     private Long parentId;
 
+    @NotBlank
     @ApiModelProperty(value = "菜单名称")
     private String name;
 
@@ -40,6 +47,7 @@ public class SysMenu implements Serializable {
     @ApiModelProperty(value = "授权(多个用逗号分隔，如：user:list,user:create)")
     private String perms;
 
+    @NotNull
     @ApiModelProperty(value = "类型   0：目录   1：菜单   2：按钮")
     private Integer type;
 
@@ -48,6 +56,9 @@ public class SysMenu implements Serializable {
 
     @ApiModelProperty(value = "排序")
     private Integer orderNum;
+
+    @TableField(exist = false)
+    private List<SysMenu> list;
 
 
 }
