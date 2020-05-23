@@ -9,9 +9,16 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
+    <!--<packaging>pom</packaging>-->
+
     <artifactId>manager-web</artifactId>
 
     <dependencies>
+        <dependency>
+            <groupId>com.zy</groupId>
+            <artifactId>store-api</artifactId>
+            <version>1.0</version>
+        </dependency>
         <dependency>
             <groupId>com.zy</groupId>
             <artifactId>item-api</artifactId>
@@ -97,6 +104,15 @@
 
 
     </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
 
 
 </project>

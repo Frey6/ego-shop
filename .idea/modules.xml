@@ -4,7 +4,14 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ego-item/ego-item.iml" filepath="$PROJECT_DIR$/ego-item/ego-item.iml" />
       <module fileurl="file://$PROJECT_DIR$/ego-manager/ego-manager.iml" filepath="$PROJECT_DIR$/ego-manager/ego-manager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ego-message/ego-message.iml" filepath="$PROJECT_DIR$/ego-message/ego-message.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ego-order/ego-order.iml" filepath="$PROJECT_DIR$/ego-order/ego-order.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ego-pay/ego-pay.iml" filepath="$PROJECT_DIR$/ego-pay/ego-pay.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ego-portal/ego-portal.iml" filepath="$PROJECT_DIR$/ego-portal/ego-portal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ego-search/ego-search.iml" filepath="$PROJECT_DIR$/ego-search/ego-search.iml" />
       <module fileurl="file://$PROJECT_DIR$/ego-shop.iml" filepath="$PROJECT_DIR$/ego-shop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ego-store/ego-store.iml" filepath="$PROJECT_DIR$/ego-store/ego-store.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ego-user/ego-user.iml" filepath="$PROJECT_DIR$/ego-user/ego-user.iml" />
       <module fileurl="file://$PROJECT_DIR$/ego-item/item-api/item-api.iml" filepath="$PROJECT_DIR$/ego-item/item-api/item-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/ego-item/item-domain/item-domain.iml" filepath="$PROJECT_DIR$/ego-item/item-domain/item-domain.iml" />
       <module fileurl="file://$PROJECT_DIR$/ego-item/item-mapper/item-mapper.iml" filepath="$PROJECT_DIR$/ego-item/item-mapper/item-mapper.iml" />
@@ -14,6 +21,30 @@
       <module fileurl="file://$PROJECT_DIR$/ego-manager/manager-mapper/manager-mapper.iml" filepath="$PROJECT_DIR$/ego-manager/manager-mapper/manager-mapper.iml" />
       <module fileurl="file://$PROJECT_DIR$/ego-manager/manager-service/manager-service.iml" filepath="$PROJECT_DIR$/ego-manager/manager-service/manager-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/ego-manager/manager-web/manager-web.iml" filepath="$PROJECT_DIR$/ego-manager/manager-web/manager-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ego-message/message-api/message-api.iml" filepath="$PROJECT_DIR$/ego-message/message-api/message-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ego-message/message-service/message-service.iml" filepath="$PROJECT_DIR$/ego-message/message-service/message-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ego-order/order-api/order-api.iml" filepath="$PROJECT_DIR$/ego-order/order-api/order-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ego-order/order-domain/order-domain.iml" filepath="$PROJECT_DIR$/ego-order/order-domain/order-domain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ego-order/order-mapper/order-mapper.iml" filepath="$PROJECT_DIR$/ego-order/order-mapper/order-mapper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ego-order/order-service/order-service.iml" filepath="$PROJECT_DIR$/ego-order/order-service/order-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ego-pay/pay-api/pay-api.iml" filepath="$PROJECT_DIR$/ego-pay/pay-api/pay-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ego-pay/pay-service/pay-service.iml" filepath="$PROJECT_DIR$/ego-pay/pay-service/pay-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ego-portal/portal-api/portal-api.iml" filepath="$PROJECT_DIR$/ego-portal/portal-api/portal-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ego-portal/portal-domain/portal-domain.iml" filepath="$PROJECT_DIR$/ego-portal/portal-domain/portal-domain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ego-portal/portal-mapper/portal-mapper.iml" filepath="$PROJECT_DIR$/ego-portal/portal-mapper/portal-mapper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ego-portal/portal-service/portal-service.iml" filepath="$PROJECT_DIR$/ego-portal/portal-service/portal-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ego-portal/portal-web/portal-web.iml" filepath="$PROJECT_DIR$/ego-portal/portal-web/portal-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ego-search/search-api/search-api.iml" filepath="$PROJECT_DIR$/ego-search/search-api/search-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ego-search/search-demo/search-demo.iml" filepath="$PROJECT_DIR$/ego-search/search-demo/search-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ego-search/search-service/search-service.iml" filepath="$PROJECT_DIR$/ego-search/search-service/search-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ego-store/store-api/store-api.iml" filepath="$PROJECT_DIR$/ego-store/store-api/store-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ego-store/store-domain/store-domain.iml" filepath="$PROJECT_DIR$/ego-store/store-domain/store-domain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ego-store/store-mapper/store-mapper.iml" filepath="$PROJECT_DIR$/ego-store/store-mapper/store-mapper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ego-store/store-service/store-service.iml" filepath="$PROJECT_DIR$/ego-store/store-service/store-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ego-user/user-api/user-api.iml" filepath="$PROJECT_DIR$/ego-user/user-api/user-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ego-user/user-domain/user-domain.iml" filepath="$PROJECT_DIR$/ego-user/user-domain/user-domain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ego-user/user-mapper/user-mapper.iml" filepath="$PROJECT_DIR$/ego-user/user-mapper/user-mapper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ego-user/user-service/user-service.iml" filepath="$PROJECT_DIR$/ego-user/user-service/user-service.iml" />
     </modules>
   </component>
 </project>

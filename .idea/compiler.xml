@@ -15,12 +15,43 @@
         <module name="manager-mapper" />
         <module name="manager-service" />
         <module name="manager-web" />
+        <module name="message-api" />
+        <module name="message-service" />
+        <module name="order-api" />
+        <module name="order-domain" />
+        <module name="order-mapper" />
+        <module name="order-service" />
+        <module name="pay-api" />
+        <module name="pay-service" />
+        <module name="portal-api" />
+        <module name="portal-domain" />
+        <module name="portal-mapper" />
+        <module name="portal-service" />
+        <module name="portal-web" />
+        <module name="search-api" />
+        <module name="search-demo" />
+        <module name="search-service" />
+        <module name="store-api" />
+        <module name="store-domain" />
+        <module name="store-mapper" />
+        <module name="store-service" />
+        <module name="user-api" />
+        <module name="user-domain" />
+        <module name="user-mapper" />
+        <module name="user-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="ego-item" target="1.8" />
       <module name="ego-manager" target="1.8" />
+      <module name="ego-message" target="1.8" />
+      <module name="ego-order" target="1.8" />
+      <module name="ego-pay" target="1.8" />
+      <module name="ego-portal" target="1.8" />
+      <module name="ego-search" target="1.8" />
       <module name="ego-shop" target="1.8" />
+      <module name="ego-store" target="1.8" />
+      <module name="ego-user" target="1.8" />
       <module name="item-api" target="1.8" />
       <module name="item-domain" target="1.8" />
       <module name="item-mapper" target="1.8" />
@@ -30,10 +61,41 @@
       <module name="manager-mapper" target="1.8" />
       <module name="manager-service" target="1.8" />
       <module name="manager-web" target="1.8" />
+      <module name="message-api" target="1.8" />
+      <module name="message-service" target="1.8" />
+      <module name="order-api" target="1.8" />
+      <module name="order-domain" target="1.8" />
+      <module name="order-mapper" target="1.8" />
+      <module name="order-service" target="1.8" />
+      <module name="pay-api" target="1.8" />
+      <module name="pay-service" target="1.8" />
+      <module name="portal-api" target="1.8" />
+      <module name="portal-domain" target="1.8" />
+      <module name="portal-mapper" target="1.8" />
+      <module name="portal-service" target="1.8" />
+      <module name="portal-web" target="1.8" />
+      <module name="search-api" target="1.8" />
+      <module name="search-demo" target="1.8" />
+      <module name="search-service" target="1.8" />
+      <module name="store-api" target="1.8" />
+      <module name="store-domain" target="1.8" />
+      <module name="store-mapper" target="1.8" />
+      <module name="store-service" target="1.8" />
+      <module name="user-api" target="1.8" />
+      <module name="user-domain" target="1.8" />
+      <module name="user-mapper" target="1.8" />
+      <module name="user-service" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="ego-item" options="-parameters" />
+      <module name="ego-order" options="-parameters" />
+      <module name="ego-pay" options="-parameters" />
+      <module name="ego-portal" options="-parameters" />
+      <module name="ego-search" options="-parameters" />
+      <module name="ego-store" options="-parameters" />
+      <module name="ego-user" options="-parameters" />
       <module name="item-api" options="-parameters" />
       <module name="item-domain" options="-parameters" />
       <module name="item-mapper" options="-parameters" />
@@ -43,6 +105,30 @@
       <module name="manager-mapper" options="-parameters" />
       <module name="manager-service" options="-parameters" />
       <module name="manager-web" options="-parameters" />
+      <module name="message-api" options="-parameters" />
+      <module name="message-service" options="-parameters" />
+      <module name="order-api" options="-parameters" />
+      <module name="order-domain" options="-parameters" />
+      <module name="order-mapper" options="-parameters" />
+      <module name="order-service" options="-parameters" />
+      <module name="pay-api" options="-parameters" />
+      <module name="pay-service" options="-parameters" />
+      <module name="portal-api" options="-parameters" />
+      <module name="portal-domain" options="-parameters" />
+      <module name="portal-mapper" options="-parameters" />
+      <module name="portal-service" options="-parameters" />
+      <module name="portal-web" options="-parameters" />
+      <module name="search-api" options="-parameters" />
+      <module name="search-demo" options="-parameters" />
+      <module name="search-service" options="-parameters" />
+      <module name="store-api" options="-parameters" />
+      <module name="store-domain" options="-parameters" />
+      <module name="store-mapper" options="-parameters" />
+      <module name="store-service" options="-parameters" />
+      <module name="user-api" options="-parameters" />
+      <module name="user-domain" options="-parameters" />
+      <module name="user-mapper" options="-parameters" />
+      <module name="user-service" options="-parameters" />
     </option>
   </component>
 </project>

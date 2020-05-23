@@ -6,6 +6,13 @@
     <modules>
         <module>ego-manager</module>
         <module>ego-item</module>
+        <module>ego-store</module>
+        <module>ego-portal</module>
+        <module>ego-user</module>
+        <module>ego-search</module>
+        <module>ego-message</module>
+        <module>ego-pay</module>
+        <module>ego-order</module>
     </modules>
     <parent>
         <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-web -->

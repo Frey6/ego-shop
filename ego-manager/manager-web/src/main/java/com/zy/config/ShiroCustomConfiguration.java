@@ -90,7 +90,7 @@ public class ShiroCustomConfiguration {
     filterChainDefinitionMap.put("/unauthorizedUrl","anon");
     filterChainDefinitionMap.put("/getCode","anon") ; //放行的资源
 //    filterChainDefinitionMap.put("/**","authc"); // 拦截的资源
-    filterChainDefinitionMap.put("/**","anon");
+//    filterChainDefinitionMap.put("/**","anon");
     shiroFilterFactoryBean.setFilterChainDefinitionMap(filterChainDefinitionMap);
     shiroFilterFactoryBean.setSecurityManager(defaultWebSecurityManager);
     return  shiroFilterFactoryBean ;

@@ -20,6 +20,8 @@ mybatis-plus:
     log-impl:  org.apache.ibatis.logging.stdout.StdOutImpl
 server:
   port: 8085
+#  servlet:
+#    context-path: /apis
 
 #shiro
 #shiro:

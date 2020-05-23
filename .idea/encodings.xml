@@ -13,5 +13,36 @@
     <file url="file://$PROJECT_DIR$/ego-manager/manager-mapper" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ego-manager/manager-service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ego-manager/manager-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ego-message" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ego-message/message-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ego-message/message-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ego-order" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ego-order/order-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ego-order/order-domain" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ego-order/order-mapper" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ego-order/order-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ego-pay" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ego-pay/pay-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ego-pay/pay-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ego-portal" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ego-portal/portal-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ego-portal/portal-domain" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ego-portal/portal-mapper" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ego-portal/portal-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ego-portal/portal-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ego-search" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ego-search/search-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ego-search/search-demo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ego-search/search-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ego-store" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ego-store/store-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ego-store/store-domain" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ego-store/store-mapper" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ego-store/store-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ego-user" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ego-user/user-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ego-user/user-domain" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ego-user/user-mapper" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ego-user/user-service" charset="UTF-8" />
   </component>
 </project>
