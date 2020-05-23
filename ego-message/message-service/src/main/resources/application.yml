@@ -1,0 +1,20 @@
+spring:
+  activemq:
+    broker-url: tcp://111.229.65.208:61616
+    pool:
+      enabled: true
+      max-sessions-per-connection: 20
+      max-connections: 5
+    packages:
+      trust-all: true
+sms:
+  region-id: cn-hangzhou
+  access-key-id: LTAI4FsN7DFYRnjRRTZsDCKe
+  access-secret: WWoQKGq8kyFHwn0w1glO2BI4mGM6Gz
+  sys-domain: dysmsapi.aliyuncs.com
+  version: 2017-05-25
+wechat:
+  app-id: wxbb21237efa82a74c
+  app-secret: 6f7cadfa9981649787f3c98b1844ce1f
+  token-url:  https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=%s&secret=%s
+  message-url: https://api.weixin.qq.com/cgi-bin/message/template/send?access_token=%s

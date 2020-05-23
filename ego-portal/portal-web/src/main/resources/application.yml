@@ -1,0 +1,63 @@
+spring:
+  jackson: # ��������������������?
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+  datasource:
+    url: jdbc:mysql://111.229.65.208:3306/ego-shop
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  redis:
+    port: 6379
+    host: 111.229.65.208
+  activemq:
+    broker-url: tcp://111.229.65.208:61616
+    pool:
+      enabled: true
+      max-connections: 5
+      max-sessions-per-connection: 10
+  aop:
+    auto: true # spring boot ��������?���������Aop��������?
+    proxy-target-class: true # spring boot ���������������proxy-target-class=true ������������������Cglib ������������������
+mybatis-plus:
+  mapper-locations: classpath:/mapper/*.xml
+  type-aliases-package: com.zy.entity
+  configuration: # ��������������?
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+server:
+  port: 8090
+#shiro:
+#   annotations:
+#    enabled: true
+#swagger ��������?
+swagger2:
+  base-package: com.zy.controller
+  name: zy
+  url: https://github/NymphWeb
+  email: 2039447658@qq.com
+  title: 后台管理系统接口
+  description: 实现后台管理系统的所有接口
+  license: GPL
+  license-url: https://gpl.com
+  terms-of-service-url: www.chaohuiwan.top
+
+## ���������shiro��������������?
+#shiro:
+#  annotations:
+#    enabled: true
+dubbo:
+  application:
+    name: portal-web
+    id: portal-web
+  registry:
+    protocol: zookeeper
+    address: 111.229.65.208:2181
+# ��������������������?
+wechat:
+  appid: wx0278c588c3bc4bdf
+  secret: 975b92cdd4af4dfbd8c66a7e9ce9b18b
+
+#��������������������?
+snow:
+  workId: 1
+  appId: 1

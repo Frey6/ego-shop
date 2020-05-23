@@ -1,0 +1,22 @@
+spring:
+  data:
+    solr:
+      host: http://111.229.65.208:8983/solr/ego
+  activemq:
+    pool:
+      enabled: true
+      max-connections: 5
+      max-sessions-per-connection: 20
+    broker-url: tcp://111.229.65.208:61616
+dubbo:
+  application:  # 应用的名称
+    id: search-service
+    name: search-service
+  registry: # 注册中心
+    protocol: zookeeper
+    address: 111.229.65.208:2181
+  protocol: # 提供者监听的端口
+    port: 6666
+    name: dubbo
+import:
+  size: 20
